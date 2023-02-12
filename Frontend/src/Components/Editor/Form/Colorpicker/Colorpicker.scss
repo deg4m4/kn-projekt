@@ -1,0 +1,19 @@
+.colorPicker{
+    display: flex;
+    align-items: center;
+    position: relative;
+    .colorPicker__selected{
+        width: 30px;
+        height: 34px;
+        background-color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid grey;
+    }
+    .pickerStyles{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        z-index: 10000;
+    }
+}

@@ -1,0 +1,66 @@
+@import '../../../Utils//variables.scss';
+
+.preview{
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+ font-family: $font;
+    .preview__thumbnail{
+        width: 85%;
+        height: 500px;
+        background-color: white;
+    }
+    .preview__details{
+        margin-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        .preview__name{
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .preview__categories{
+           list-style-type: none;
+           li{
+               margin-left: 20px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               img{
+                   width: 40px;
+               }
+           }
+        }
+    }
+}
+
+.preview-btn-outlined{
+    border: 1px solid $primary-dark;
+    display: inline;
+    align-self: flex-start;
+    padding:  7px 20px;
+    border-radius: 7px;
+    color: $primary-dark;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+.preview-btn-outlined:hover{
+ color: white;
+ background-color: $primary-dark;
+}
+.preview-btn-cat{
+    border: 1px solid $primary-dark;
+    display: inline;
+    align-self: flex-start;
+    padding:  3px 10px;
+    border-radius: 7px;
+    color: $primary-dark;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.preview__title{
+    font-weight: 600;
+    color: #98989E;
+    min-width: 120px;
+
+}

@@ -1,0 +1,116 @@
+.dashboard {
+  min-height: 100%;
+  background-color: #f2f5fa;
+}
+
+.dashboard .dashboard__head {
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 0px 10%;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul li {
+  margin-left: 30px;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul li .upgradeBtn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white !important;
+  font-size: 13px;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul li .upgradeBtn img {
+  width: 15px;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul li a,
+.dashboard .dashboard__head .dashboard__navigation ul li a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 13px;
+}
+
+.dashboard .dashboard__head .dashboard__navigation ul li a img,
+.dashboard .dashboard__head .dashboard__navigation ul li a:visited img {
+  width: 10px;
+  height: 9px;
+}
+
+.dashboard .dashboard__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashboard .dashboard__footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 5%;
+  font-family: Poppins;
+  padding-bottom: 20px;
+}
+
+.dashboard .dashboard__footer hr {
+  margin: 20px 0px;
+}
+
+.dashboard .dashboard__footer .dashboard__footerBrand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.body__title {
+  font-family: Poppins;
+  margin-top: 40px !important;
+}
+
+.body__title .body__titleHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__title .body__titleHolder .btn__addNew,
+.body__title .body__titleHolder .btn__addNew:visited {
+  background-color: #3521b5;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.body__title h2 {
+  font-weight: 500;
+  display: inline;
+}
+/*# sourceMappingURL=Home.css.map */

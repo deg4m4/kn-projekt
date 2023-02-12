@@ -1,0 +1,425 @@
+@import '../../Utils/variables.scss';
+
+.editor {
+
+    display: flex;
+    font-family: $font;
+    flex: 1;
+    position: relative;
+
+    // Sidebar
+    .property {
+        display: none !important;
+    }
+
+    .editor__layers {
+        position: absolute;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        width: 200px;
+        height: 400px;
+        top: 200px;
+        right: 300px;
+        z-index: 40000;
+
+        .selectedLayer {
+            color: white;
+        }
+    }
+
+    .sidebar__wrapper {
+        display: flex;
+        position: relative;
+
+        .editor__sidebar {
+            height: 100%;
+            width: 90px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 20000;
+
+            .sidebar__item {
+                margin-top: 10px;
+                width: 70%;
+                height: 50px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                padding: 5px 0px;
+
+                svg {
+                    width: 22px;
+                    height: 40px;
+                    fill: black;
+                }
+
+                .sidebar__item-name {
+                    font-size: 11px;
+                    font-weight: 500;
+                }
+            }
+
+            .sidebar__item:hover {
+
+                background-color: #F4F1F6;
+            }
+
+            .sidebar__item-active {
+                background-color: $primary-color !important;
+                color: white !important;
+                fill: white !important;
+
+                svg {
+                    fill: white;
+                }
+            }
+
+        }
+
+        .editor__sidebarWindow-opened {
+
+            transform: translateX(90px) !important;
+
+        }
+
+        .editor__sidebarWindow {
+            position: absolute;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            width: 400px;
+            z-index: 10000;
+            transform: translateX(-400px);
+            border-left: 1px solid rgb(230, 230, 230);
+            transition: all 0.2s ease-in-out;
+            overflow-y: scroll;
+
+            .editor__window-layers {
+
+                .editor__window-layer-active {
+                    border: 1px solid #2ecc71 !important;
+
+                }
+
+                .editor__window-layer {
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid rgb(225, 225, 225);
+                    box-sizing: border-box;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    align-items: center;
+                    margin: 10px 0px;
+
+                    button {
+                        outline: none;
+                        margin: 0px 2px;
+                        padding: 5px 15px;
+                        font-family: $font;
+                        border: 0px;
+                        border-radius: 2px;
+                        cursor: pointer;
+                    }
+
+                    .editor__window-layer--controls-btnUp {
+                        background-color: #7209b7;
+                        color: white;
+                    }
+
+                }
+
+            }
+
+            .editor__window-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0px;
+
+                span {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+            .editor__window-title-elements {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0px;
+
+                p {
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+
+            /* width */
+            .window__images::-webkit-scrollbar {
+                width: 10px;
+                border-radius: 20px;
+            }
+
+            /* Track */
+            .window__images::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            .window__images::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            /* Handle on hover */
+            .window__images::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+
+            .window__images {
+                height: 90%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                justify-content: center;
+                align-items: start;
+                overflow-y: scroll;
+
+                .window__images-item {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    height: 114px;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 12px;
+                        text-align: center;
+                        font-weight: 600;
+                        display: inline;
+                    }
+
+                    img {
+                        height: 114px;
+                        width: 100%;
+                        object-fit: cover !important;
+                        border-radius: 10px;
+                    }
+
+                    .shapeImage {
+                        object-fit: contain !important;
+                        width: 80% !important;
+                        height: 60px !important;
+
+                    }
+
+                }
+
+                .window__images-item:hover {
+                    background-color: rgb(241, 240, 240);
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+    }
+
+    // Work Area
+    .editor__workarea {
+        width: 100%;
+        background-color: #f4f4f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+        position: relative;
+        overflow: hidden;
+        height: 90vh;
+
+        .editor__tooltiphover {
+            z-index: 9999999 !important;
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            display: flex;
+
+            .duplicate {
+                display: flex;
+                background: rgb(216, 208, 208);
+            }
+
+            .editor__loading {
+                height: 40px;
+                width: 40px;
+                margin-right: 10px;
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+
+        .editor__presentation {
+            background-color: white;
+
+        }
+
+    }
+}
+
+.elementConfig__Placeholder {
+    width: 380px;
+}
+
+/* width */
+.editor__elementConfig::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+}
+
+/* Track */
+.editor__elementConfig::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.editor__elementConfig::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.editor__elementConfig::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.editor__elementConfig {
+    z-index: 2000;
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    right: 0px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: scroll;
+
+    .editor__elementConfig-notSelected {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p {
+            font-size: 13px;
+        }
+
+        img {
+            width: 40px;
+            margin-top: 20px;
+            display: none;
+        }
+
+    }
+
+    .editor__configHead {
+        font-weight: 600;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        img {
+            object-fit: cover;
+            height: 20px;
+            display: none;
+        }
+    }
+
+    .editor__configRow {
+        color: #303a41;
+        margin-top: 10px;
+
+        .editor__configRow-details {
+            min-width: 100px;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 14px;
+            }
+
+            .editor__configRow-icon {
+                width: 15px;
+                margin-right: 10px;
+            }
+        }
+
+        .editor__control {
+            display: flex;
+        }
+
+    }
+}
+
+
+.duplicate{
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: $font;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 0px 10px;
+
+    img{
+        width: 20px;
+    }
+}
+
+.active{
+    background-color: $primary-color;
+    svg{
+        fill: white !important;
+    }
+}

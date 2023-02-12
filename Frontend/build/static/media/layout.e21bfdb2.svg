@@ -1,0 +1,22 @@
+<svg id="layout" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Group_37" data-name="Group 37">
+    <g id="Group_36" data-name="Group 36">
+      <path id="Path_58" data-name="Path 58" d="M26.873,0H1.127A1.127,1.127,0,0,0,0,1.127V26.872A1.127,1.127,0,0,0,1.127,28H26.872A1.127,1.127,0,0,0,28,26.873V1.127A1.127,1.127,0,0,0,26.873,0ZM25.745,25.745H2.255V2.255h23.49Z" fill=""/>
+    </g>
+  </g>
+  <g id="Group_39" data-name="Group 39" transform="translate(1.127 9.471)">
+    <g id="Group_38" data-name="Group 38">
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="25.783" height="2.255" fill=""/>
+    </g>
+  </g>
+  <g id="Group_41" data-name="Group 41" transform="translate(16.311 10.599)">
+    <g id="Group_40" data-name="Group 40">
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="2.255" height="16.311" fill=""/>
+    </g>
+  </g>
+  <g id="Group_43" data-name="Group 43" transform="translate(1.127 17.401)">
+    <g id="Group_42" data-name="Group 42">
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="16.311" height="2.255" fill=""/>
+    </g>
+  </g>
+</svg>

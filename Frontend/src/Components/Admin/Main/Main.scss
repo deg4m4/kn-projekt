@@ -1,0 +1,161 @@
+@import'../../../Utils/variables.scss';
+
+.admin{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    .admin__content{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+
+        .admin__page{
+            padding: 40px 20px;
+            box-sizing: border-box;
+            .admin__title{
+                height: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: $font;
+                margin: 20px 0px;
+            }
+        }
+        .admin__tabs{
+            display: flex;
+            margin:40px 0px;
+            span{
+            margin: 0px 30px;
+            font-family: $font;
+            font-size: 15px;
+            color: grey;
+            cursor: pointer;
+            }
+
+            .admin__tab-active{
+                border-bottom: 3px solid #445B63;
+                padding-bottom: 10px;
+                color: black;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    
+    .admin__table{
+        font-family: $font;
+        // Table head
+        .admin__table-head{
+            display: flex;
+            background-color: #fcfcfc;
+            padding: 14px 0px;
+            box-sizing: border-box;
+            .admin__table-head--cell{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                font-weight: 600;
+            }
+        }
+
+        /// Table body
+        .admin__table-body{
+            display: flex;
+            box-sizing: border-box ;
+            flex-direction: column;
+            .admin__table-row:hover{
+                cursor: pointer;
+                background-color: whitesmoke;
+            }
+            .admin__table-row{
+                width: 100%;
+                display: flex;
+                padding: 10px 0px;
+                border-top: 1px solid rgb(241, 238, 238);
+                border-bottom: 1px solid rgb(241, 238, 238);
+                background-color: white;
+                .admin__table-body--cell{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .table__template-picture{
+                    img{
+                        width: 80px;
+                        border-radius: 10px;
+                    }
+                }
+                .admin__table-body--cell---email {
+                    .email__avatar{
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 28px;
+                        margin-right: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-weight: 600;
+
+                    }
+                }
+                .admin__table-body--cell---status{
+                    .admin__table-status{
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+
+                    }
+                }
+            }
+     
+        }
+        .admin__table-footer{
+            display: flex;
+            padding: 0px 40px;
+            box-sizing: border-box;
+            justify-content: center;
+            margin-top: 20px;
+            cursor: pointer;
+            a{
+                color: black;
+                font-size: 15px;
+                margin: 0px 10px;
+                font-weight: 600;
+                img{
+                    width: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+.mirror{
+    transform: rotate(180deg);
+}
+.admin__actionBtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin__datePicker{
+    border: 1px solid #dbdada;
+    outline: none;
+    height: 35px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    width: 100%;
+
+}

@@ -1,0 +1,57 @@
+.align {
+  border: 1px solid #c7c7c7;
+  height: 27px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(248, 248, 248, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align .align__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.align .align__item .align__item-icon {
+  height: 80%;
+}
+
+.align .align__item-active {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #1f1f1f !important;
+}
+
+.align .align__item-active .align__item-icon {
+  height: 80%;
+  color: white !important;
+}
+
+.align .align__item:hover {
+  background-color: #dfdfdf;
+}
+/*# sourceMappingURL=Align.css.map */

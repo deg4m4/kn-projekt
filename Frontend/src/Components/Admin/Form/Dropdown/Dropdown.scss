@@ -1,0 +1,34 @@
+@import '../../../../Utils/variables.scss';
+.admin__dropdown{
+    position: relative;
+    height: fit-content;
+    input{
+        height: 40px;
+        width: 200px;
+        width: 100%;
+        border: 1px solid #dbdada ;
+        border-radius: 3px;
+        outline: none;
+        padding: 0px 8px;
+        box-sizing: border-box;
+        
+    }
+    .admin__dropdown-select{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        z-index: 10000;
+        border:1px solid #dbdada;
+        .admin__dropdown-select--item{
+            padding: 10px 2px;
+            span{
+                font-size: 13px;
+            }
+ 
+        }
+        .admin__dropdown-select--item:hover{
+            background-color: whitesmoke;
+        }
+    }
+    top: 80%;
+}

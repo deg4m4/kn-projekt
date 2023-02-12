@@ -1,0 +1,26 @@
+
+@import '../../../../Utils/variables.scss';
+.admin__btn-outlined{
+    padding: 5px 13px;
+    border: 2px solid #445B63;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #445B63;
+    font-family: $font;
+}
+.admin__btn-default{
+    padding: 5px 13px;
+    border: 2px solid #445B63;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: #445B63;
+    font-family: $font;
+
+}
+.admin__btn-outlined:hover{
+    background-color: #445B63;
+    color: white;
+}

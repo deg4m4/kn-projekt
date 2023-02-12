@@ -1,0 +1,21 @@
+.admin__input{
+    margin: 10px 0px;
+
+    .admin__inputName{
+        margin: 5px 0px;
+        margin-top: 10px;
+    }
+    .admin__inputField{
+        border: 1px solid #dbdada;
+        outline: none;
+        height: 35px;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .admin__inputField:focus{
+        border: 1px solid #445B63;
+
+    }
+}

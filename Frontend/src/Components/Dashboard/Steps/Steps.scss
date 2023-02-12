@@ -1,0 +1,94 @@
+@import '../../../Utils/variables.scss';
+.steps{
+   min-height: 70vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: $font;
+   text-align: center;
+   .steps__step1 {
+      img{
+         width: 400px;
+      }
+      .steps_step1-title{
+         font-size: 30px;
+      }
+      .steps__step1-continue{
+        width: unset;
+        border-radius: 10px;
+      }
+      .steps_step1-description{
+         font-size: 19px;
+      }
+   
+   }
+
+   .steps__step2{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .steps__categoriesHeader{
+         width: 70%;
+         height: 100px;
+         background-color: white;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         padding: 0px 40px;
+         box-sizing: border-box;
+         .steps__categoriesBtn{
+            width: 200px;
+            height: 80%;
+            background-color: $primary-color;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+         }
+         .steps__categories-right{
+            width: 100%;
+            height: 90%;
+            border-left: 1px solid rgb(212, 212, 212);
+            margin-left: 20px;
+            padding: 0px 40px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+
+            .steps_categories-type{
+               box-sizing: border-box;
+               padding: 0px 20px;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               .steps_typeName{
+                 font-weight: 700;
+                  color: rgb(138, 138, 138);
+                  margin-bottom: 5px;
+                 
+               }
+            }
+         }
+
+      }
+      .steps__step2-templates{
+         gap: 30px;
+         
+         .steps__templateItem{
+            .steps__template{
+               width: 250px;
+               height: 300px;
+               background-color: white;
+            }
+         }
+      }
+      .steps__step2-title{
+         font-size: 30px;  
+      }
+   }
+
+}
+

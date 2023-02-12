@@ -1,0 +1,146 @@
+@import "../../../Utils/variables.scss";
+.login {
+    height: 100vh;
+    font-family: $font;
+    // Login left
+    .login__left {
+        // Logo
+        .login__logo {
+            img {
+                height: 60px;
+            }
+        } /// Logo
+        // heading
+        .login__heading{
+            span{
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        // Login Devider
+        .login__divider{
+            position: relative;
+        
+            .login__divider-text{
+                position:  absolute;
+                width: fit-content;
+                background-color: white;
+                font-weight: 600;
+                top:-3px
+                
+            }
+        }
+        /// Login Devider
+        .login__forgotPasswod{
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           a,a:visited{
+               color: $primary-color;
+               text-decoration: none;
+           }
+        }
+
+        .login__notRegistered{
+            a,a:visited{
+                color: $primary-color;
+                text-decoration: none;
+            }
+         }
+         .login__rights{
+            align-self: flex-end;
+         }
+    }
+    ///
+
+    /// Login left
+
+    // Login right
+    .login__right {
+        background-color: $primary-color;
+        position: relative;
+     
+        .login__topLeft{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .login__botRight{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .login__circle1{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login__circle2{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            right:15%;
+            top: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login__circle3{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 15%;
+            top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login__right-content{
+            position: relative;
+            height: 80%;
+            width: 50%;
+            .login__right-contentTop{
+                height: 40%;
+                width: 80%;
+                img{
+                    width: 400px;
+                    position: relative;
+                    top: 100px;
+                }
+            
+            }
+            .login__right-contentBottom{
+                text-align: center;
+            }
+        }
+    }
+    /// Login left
+}
+
+.auth__error{
+    margin-top: 40px;
+    width: 100%;
+    background-color: #fab1a9;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    .auth__error-title{
+        font-weight: 500;
+        color: #e74c3c;
+        font-size: 14px;
+    }
+    .auth__error-body{
+    font-size: 13px;
+    }
+}

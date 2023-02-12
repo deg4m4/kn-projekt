@@ -1,0 +1,124 @@
+.steps {
+  min-height: 70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.steps .steps__step1 img {
+  width: 400px;
+}
+
+.steps .steps__step1 .steps_step1-title {
+  font-size: 30px;
+}
+
+.steps .steps__step1 .steps__step1-continue {
+  width: unset;
+  border-radius: 10px;
+}
+
+.steps .steps__step1 .steps_step1-description {
+  font-size: 19px;
+}
+
+.steps .steps__step2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps .steps__step2 .steps__categoriesHeader {
+  width: 70%;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.steps .steps__step2 .steps__categoriesHeader .steps__categoriesBtn {
+  width: 200px;
+  height: 80%;
+  background-color: #5138ed;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.steps .steps__step2 .steps__categoriesHeader .steps__categories-right {
+  width: 100%;
+  height: 90%;
+  border-left: 1px solid #d4d4d4;
+  margin-left: 20px;
+  padding: 0px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.steps .steps__step2 .steps__categoriesHeader .steps__categories-right .steps_categories-type {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steps .steps__step2 .steps__categoriesHeader .steps__categories-right .steps_categories-type .steps_typeName {
+  font-weight: 700;
+  color: #8a8a8a;
+  margin-bottom: 5px;
+}
+
+.steps .steps__step2 .steps__step2-templates {
+  gap: 30px;
+}
+
+.steps .steps__step2 .steps__step2-templates .steps__templateItem .steps__template {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+}
+
+.steps .steps__step2 .steps__step2-title {
+  font-size: 30px;
+}
+/*# sourceMappingURL=Steps.css.map */

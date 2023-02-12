@@ -1,0 +1,132 @@
+@import "../../../Utils/variables.scss";
+.dashboard {
+    min-height: 100%;
+    background-color: $dashboard-bg;
+    // head
+    .dashboard__head {
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 0px 10%;
+        .brand{
+            img{
+                height: 35px;
+            }
+        }
+        .mobile__toggle{
+            display: none;
+        }
+        .dashboard__navigation {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    margin-left: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .upgradeBtn {
+                        border-radius: 8px;
+                        padding: 10px 20px;
+                        color: black !important;
+                        font-size: 13px;
+                        border: 1px solid #5138ed ;
+                        background-color: white ; 
+                        img {
+                            width: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                    a,
+                    a:visited {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 500;
+                        font-family: $font;
+                        font-size: 13px;
+                        .small-highlight{
+                            display: inline;
+                            background-color: $primary-color;
+                            color: white;
+                            font-weight: 600;
+                            border-radius: 20px;
+                            padding: 2px 7px;
+                            font-size: 9px;
+                            margin-right: 3px;
+                        }
+                        img {
+                            width: 25px;
+                            margin-left: 10px;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /// head
+    //body
+    .dashboard__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    ///body
+
+    // footer
+    .dashboard__footer {
+        box-sizing: border-box;
+        padding: 0px 5%;
+        font-family: $font;
+        padding-bottom: 20px;
+
+        hr {
+            margin: 20px 0px;
+        }
+        .dashboard__footerBrand {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    /// footer
+}
+
+.body__title {
+    font-family: $font;
+    margin-top: 40px !important;
+    .body__titleHolder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn__addNew,
+        .btn__addNew:visited {
+            background-color: $primary-dark;
+            margin: 0px 5px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 7px;
+        }
+       // 
+       .btn__addNew-outlined,
+       .btn__addNew-outlined:visited {
+           margin: 0px 5px;
+           color: $primary-dark;
+           border: 2px solid $primary-dark;
+           text-decoration: none;
+           padding: 10px 20px;
+           border-radius: 7px;
+       }
+    }
+    h2 {
+        font-weight: 500;
+        display: inline;
+    }
+}

@@ -1,0 +1,89 @@
+@import '../../../Utils/variables.scss';
+
+.projects__list{
+    min-height: 50vh;
+}
+.template_platformItem{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    img{
+        transition:  1s ease-in-out;
+    }
+    .categories__templateItem-btn{
+        width: 100px;
+        height: 20px;
+        border: 1px solid white;
+        opacity: 1;
+        transition: 0.2s all ease-in-out;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        color: white;
+        padding: 10px 20px;
+        font-weight: 600;
+        z-index: 2000;
+    }
+    .categories__templateItem-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.69);
+        opacity: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        transition: 0.2s all ease-in-out;
+
+    }
+}
+
+.template_platformItem:hover{
+    .categories__templateItem-overlay{
+        opacity: 1;
+        
+    }
+    .template_platformItem-btn{
+        opacity: 1;
+    }
+ }
+
+ .templates__pagination-wrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 0px;
+     .templates__pagination{
+         width: fit-content;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .templates__pagination-step{
+             border: 1px solid #3521b5;
+             color: #3521b5;
+             padding: 10px 10px;
+             border-radius: 5px;
+             font-family: $font;
+             cursor: pointer;
+             font-weight: 500;
+             margin: 0px 10px;
+         }
+         .templates__pagination-pagenumber{
+             font-family: $font;
+             color: black;
+         }
+         .templates__pagination-step:hover{
+             background-color: #3521b5;
+             color: white;
+        }
+     }
+ }

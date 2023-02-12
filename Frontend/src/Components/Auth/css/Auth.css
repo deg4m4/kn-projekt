@@ -1,0 +1,150 @@
+.login {
+  height: 100vh;
+  font-family: Poppins;
+}
+
+.login .login__left .login__logo img {
+  height: 60px;
+}
+
+.login .login__left .login__heading span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login .login__left .login__divider {
+  position: relative;
+}
+
+.login .login__left .login__divider .login__divider-text {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  font-weight: 600;
+  top: -3px;
+}
+
+.login .login__left .login__forgotPasswod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__left .login__forgotPasswod a, .login .login__left .login__forgotPasswod a:visited {
+  color: #5138ed;
+  text-decoration: none;
+}
+
+.login .login__left .login__notRegistered a, .login .login__left .login__notRegistered a:visited {
+  color: #5138ed;
+  text-decoration: none;
+}
+
+.login .login__left .login__rights {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.login .login__right {
+  background-color: #5138ed;
+  position: relative;
+}
+
+.login .login__right .login__topLeft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.login .login__right .login__botRight {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.login .login__right .login__circle1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__right .login__circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__right .login__circle3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__right .login__right-content {
+  position: relative;
+  height: 80%;
+  width: 50%;
+}
+
+.login .login__right .login__right-content .login__right-contentTop {
+  height: 40%;
+  width: 80%;
+}
+
+.login .login__right .login__right-content .login__right-contentTop img {
+  position: absolute;
+  left: 25%;
+  bottom: 35%;
+}
+
+.login .login__right .login__right-content .login__right-contentBottom {
+  text-align: center;
+}
+/*# sourceMappingURL=Auth.css.map */

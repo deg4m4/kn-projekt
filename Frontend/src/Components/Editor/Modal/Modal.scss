@@ -1,0 +1,116 @@
+.editor__modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s ease-in-out;
+   .editor__modal-body-size{
+       width: 400px;
+       height: fit-content;
+       background-color: white;
+       border-radius: 10px;
+       transition: all 0.5s ease-in-out;
+       box-sizing: border-box;
+       padding: 20px ;
+       opacity: 0;
+       position: relative;
+       .editor__modal-body{
+        p{
+            font-size: 13px;
+            color: rgb(104, 104, 104);
+            margin-bottom: 10px;
+        }
+
+       }
+       .editor__modal__json{
+           width: 100%;
+           textarea{
+               width: 100%;
+               height: 250px;
+           }
+       }
+       .editor__modal-pro{
+           background-color: #F4F6F6;
+           padding: 10px;
+           box-sizing: border-box;
+           display: flex;
+           flex-direction: column;
+           border-radius: 5px ;
+           .editor__modal-pro-name{
+               font-size: 13px;
+           }
+           .editor__modal-pro-price{
+               span{
+                   font-size: 20px;
+                   font-weight: 500;
+               }
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .editor__modal-pro-link{
+            color: #4985DD;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+
+       }
+       .editor__modal-body-head{
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 10px;
+           img{
+               width: 15px ;
+               height: 15px;
+               cursor: pointer;
+           }
+
+       }
+       .editor__modal-body-size--inputWrapper{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 10px;
+       }
+
+   }
+
+   .btn-primaryModal{
+       background-color: #5138ed !important;
+       color: white ;
+       padding: 10px 20px;
+       border-radius: 5px;
+       font-size: 13px;
+       font-weight: 600;
+       cursor: pointer !important;
+   }
+   .btn-primaryOutlined{
+    border: 1px solid #5138ed !important;
+    color: #5138ed ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer !important;
+
+
+
+
+}
+   .editor__modal-body-size-showed{
+    opacity: 1;
+
+}
+}
+
+
+.editor__modal-showed{
+    background-color: rgba(0, 0, 0,0.8);
+
+}

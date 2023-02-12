@@ -1,0 +1,39 @@
+.number__wrapper {
+  border: 1px solid #c7c7c7;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+}
+
+.number__wrapper .numberIcon {
+  min-width: 15px;
+  max-width: 15px;
+}
+
+.number__wrapper .iconText {
+  min-width: 15px;
+  font-weight: 500;
+}
+
+.number__wrapper input {
+  border: 0px;
+  width: 60px;
+  padding: 5px 10px !important;
+}
+
+.number__wrapper input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=NumberPicker.css.map */

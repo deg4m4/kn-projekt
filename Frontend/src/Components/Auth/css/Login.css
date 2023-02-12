@@ -1,0 +1,59 @@
+.login {
+  height: 100vh;
+  font-family: Poppins;
+}
+
+.login .login__left .login__logo img {
+  height: 60px;
+}
+
+.login .login__left .login__heading span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login .login__left .login__divider {
+  position: relative;
+}
+
+.login .login__left .login__divider .login__divider-text {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  font-weight: 600;
+  top: -3px;
+}
+
+.login .login__left .login__forgotPasswod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__left .login__forgotPasswod a, .login .login__left .login__forgotPasswod a:visited {
+  color: #5138ed;
+  text-decoration: none;
+}
+
+.login .login__left .login__notRegistered a, .login .login__left .login__notRegistered a:visited {
+  color: #5138ed;
+  text-decoration: none;
+}
+
+.login .login__left .login__rights {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.login .login__right {
+  background-color: #5138ed;
+}
+/*# sourceMappingURL=Login.css.map */

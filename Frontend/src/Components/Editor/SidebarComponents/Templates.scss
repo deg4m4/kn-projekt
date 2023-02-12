@@ -1,0 +1,120 @@
+.sidebar__templatesList{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .sidebar__templatesList-cats{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .sidebar__templatesList-cat{
+            width: 95%;
+            height: 80px;
+            border-radius: 5px;
+            border: 1px solid rgb(236, 235, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 14px;
+            .sidebar__templatesList-catWrap{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                .sidebar__templatesList-cat-image{
+                    display: flex;
+                    justify-content: center;
+                   
+                    img{
+                        width: 25px;
+                    }
+                }
+                .sidebar__templatesList-cat-name{
+                    display: flex;
+                    justify-content: flex-start;
+                    min-width: 150px;
+                }
+            }
+            .sidebar__plusSign{
+                color: #3498db;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.sidebar__templatesList{
+   height: 100%;
+   overflow:scroll;
+
+}
+
+
+.sidebar__templatesList-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    a{
+        border: 1px solid rgb(209, 209, 209);
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar__templatesList::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sidebar__templatesList {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.sidebar__templatesList-items{
+    height: 100%;
+    .sidebar__templatesList-items-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:12px 0px;
+        span{
+            font-weight: 600;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    .sidebar__templatesList-items-body{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        grid-row-gap: 0px;
+
+
+
+        .sidebar__templatesList-item{
+            box-sizing: border-box;
+            width: 90%;
+            border-radius: 10px;
+            object-fit: fill;
+            overflow: hidden;
+            -webkit-box-shadow: 5px 5px 15px 5px #EDEDED; 
+            box-shadow: 5px 5px 15px 5px #EDEDED;
+            height: 140px;
+            margin-top: 15px;
+        
+            cursor: pointer;
+          img{
+              width: 150%;
+           object-fit: cover;
+          }
+        }
+    }
+}

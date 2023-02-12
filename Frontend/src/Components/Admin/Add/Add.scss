@@ -1,0 +1,10 @@
+@import '../../../Utils/variables.scss';
+
+.admin__add{
+    box-sizing: border-box;
+    padding: 0px 20px;
+    font-family: $font;
+    .admin__addTemplates{
+        width: 50%;
+    }
+}

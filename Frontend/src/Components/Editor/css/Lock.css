@@ -1,0 +1,30 @@
+.lock {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lock img {
+  width: 20px;
+}
+
+.active {
+  background-color: white;
+}
+/*# sourceMappingURL=Lock.css.map */

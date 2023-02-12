@@ -1,0 +1,256 @@
+.editor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  height: 100% !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.editor .sidebar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.editor .sidebar__wrapper .editor__sidebar {
+  height: 100%;
+  width: 90px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20000;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item {
+  margin-top: 10px;
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item svg {
+  width: 22px;
+  height: 40px;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item .sidebar__item-name {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item:hover {
+  background-color: #F4F1F6;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item-active {
+  background-color: #5138ed !important;
+  color: white !important;
+}
+
+.editor .sidebar__wrapper .editor__sidebar .sidebar__item-active svg {
+  fill: white !important;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow {
+  position: absolute;
+  height: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  width: 400px;
+  z-index: 10000;
+  border-left: 1px solid #e6e6e6;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .editor__window-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .editor__window-title span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .editor__window-title img {
+  cursor: pointer;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images .window__images-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  height: 114px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images .window__images-item span {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  display: inline;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images .window__images-item img {
+  height: 114px;
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  border-radius: 10px;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images .window__images-item .shapeImage {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  width: 80% !important;
+  height: 60px !important;
+}
+
+.editor .sidebar__wrapper .editor__sidebarWindow .window__images .window__images-item:hover {
+  background-color: #f1f0f0;
+  border-radius: 10px;
+}
+
+.editor .editor__workarea {
+  width: 100%;
+  background-color: #f4f4f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1000;
+  position: relative;
+}
+
+.editor .editor__workarea .editor__tooltiphover {
+  position: absolute;
+  top: 35px;
+  right: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.editor .editor__workarea .editor__elementConfig {
+  position: absolute;
+  z-index: 2000;
+  height: 100%;
+  width: 300px;
+  background-color: white;
+  right: 0px;
+  padding: 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configHead {
+  font-weight: 600;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configRow {
+  color: #303a41;
+  margin-top: 10px;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configRow .editor__configRow-details {
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configRow .editor__configRow-details span {
+  font-size: 14px;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configRow .editor__configRow-details .editor__configRow-icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.editor .editor__workarea .editor__elementConfig .editor__configRow .editor__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.editor .editor__workarea .editor__presentation {
+  background-color: white;
+}
+/*# sourceMappingURL=Editor.css.map */

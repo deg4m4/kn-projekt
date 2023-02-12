@@ -1,0 +1,47 @@
+.projects__list {
+  font-family: Poppins;
+}
+
+.projects__list .template {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+}
+
+.projects__list .template-medium {
+  height: 200px !important;
+}
+
+.projects__list .projects__item .projects__item-thumbnailHolder .projects__item-thumbnail {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+}
+
+.projects__list .projects__item .projects__item-name {
+  font-size: 22px;
+}
+
+.projects__list .projects__item .projects__item-date {
+  font-size: 15px;
+  color: #98989E;
+}
+
+.projects__list .projects__item .project__actionsList {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.projects__list .projects__item .project__actionsList li {
+  margin-top: 15px;
+}
+
+.projects__list .projects__item .project__actionsList li a, .projects__list .projects__item .project__actionsList li a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.projects__list .projects__item .project__actionsList li img {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=Projects.css.map */

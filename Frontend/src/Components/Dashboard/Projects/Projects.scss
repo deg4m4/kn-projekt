@@ -1,0 +1,46 @@
+
+@import'../../../Utils/variables.scss';
+
+
+.projects__list{
+    font-family: $font;
+    .template{
+        width: 250px;
+        height: 350px;
+        background-color: white;
+    }
+    .template-medium{
+        height: 200px !important; 
+    }
+    .projects__item{
+        .projects__item-thumbnailHolder{
+            .projects__item-thumbnail{
+                width: 250px;
+                height: 350px;
+                background-color: white;
+            }
+        }
+        .projects__item-name{
+            font-size: 22px;
+        }
+        .projects__item-date{
+            font-size: 15px;
+            color: #98989E;
+        }
+        .project__actionsList{
+            list-style-type: none;
+            font-size: 18px;
+            li{
+                margin-top: 15px;
+                a,a:visited{
+                    color: black;
+                    text-decoration: none;
+                }
+                img{
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    }
+}

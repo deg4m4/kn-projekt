@@ -1,0 +1,35 @@
+.align{
+    border:1px solid rgb(199, 199, 199);
+    height: 27px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(248, 248, 248, 0.438);
+    display: flex;
+    .align__item{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .align__item-icon{
+            height: 80%;
+        }
+    
+    }
+    .align__item-active{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: rgb(31, 31, 31) !important;
+        .align__item-icon{
+            height: 80%;
+            color: white !important;
+        }
+    }
+    .align__item:hover{
+        background-color: rgb(223, 223, 223);
+    }
+
+}

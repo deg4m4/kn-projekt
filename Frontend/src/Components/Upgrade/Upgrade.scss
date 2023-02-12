@@ -1,0 +1,323 @@
+@import "../../Utils/variables.scss";
+
+.upgrade__head{
+    width: 100%;
+    height: 500px;
+    background-color: $primary-color;
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .circle{
+        position: absolute;
+        border-radius: 500px;
+        background-color: #3521b5;z-index: 1;
+    }
+    .circle-topleft{
+        top: -100px;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+    }
+    .circle-bottomRight{
+        right: -100px;
+        bottom: -100px;
+        width: 300px;
+        height: 300px;
+    }
+    .upgrade__head-wrapper{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .upgrade__fadedSubtitle{
+        color: #9996ff;
+        font-size: 20px;
+        letter-spacing: 2px;
+        }
+        h1{
+            color: white;
+            font-size: 45px;
+        }
+        p{
+            color: white;
+        }
+        .upgrade__btnsHolder{
+            width: 300px;
+            height: 50px;
+            border-radius: 150px;
+            background-color: #3521b5;
+            margin-top: 40px;
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            .upgrade__btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                font-weight: 600;
+                color: #9996ff;
+                cursor: pointer;
+            }
+            .upgrade__btn-active{
+                background-color: white;
+                height:50px;
+                width: 150px;
+                border-radius: 100px;
+                color: $primary-color;
+
+            }
+
+
+        }
+        
+    }
+   
+}
+
+.upgrade__body{
+    font-family: $font;
+    .upgrade_plans{
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+        box-sizing: border-box;
+        margin: 0px 10%;
+
+        box-sizing: border-box;
+
+        .upgrade__planWrapper{
+            width:100%;
+            display: flex;
+            justify-content: center;
+
+      
+        .upgrade_plan{
+            width: 350px;
+            height: 550px;
+            margin: 20px;
+            background-color: #f2f5fa;
+            .upgrade_plan-head{
+                margin: 30px 0px;
+
+                span{
+                    font-weight: 700;
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+           // background-color: black;
+           .upgrade_plan-action{
+               width: 100%;
+
+               .upgrade__features{
+                   ul{
+                       list-style-type: initial;
+                       li{
+                           margin: 20px 0px;
+                           font-size: 14px;
+                       }
+                   }
+               }
+               .upgrade_plan-action--btn{
+                   background-color: $primary-color;
+                   color: white;
+                   padding: 10px 20px;
+                   border-radius: 50px;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   margin: 10px 0px;
+                   cursor: pointer;
+               }
+
+               .upgrade__limitedTemplates{
+                   margin-top: 5px;
+                span{
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+            }
+
+               
+           
+
+               .upgrade_plan-action--price{
+                   font-weight: 800;
+                   font-size: 28px;
+                   margin-top: 20px;
+
+                   .upgrade_plan-action--duration{
+                       color: #bbb8cf;
+                   }
+               }
+           }
+        }
+    }
+    }
+    // Section 2
+
+    .upgrade__section2{
+        margin: 0px 10%;
+        margin-bottom: 5%;
+        .upgrade__centeredText{
+            width: 100%;
+            text-align: center;
+            margin: 4% 0px;
+            p{
+                font-weight: 700;
+            }
+        }
+        .upgrade__section2-grid2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 160px;
+            .upgrade__section2-left{
+             
+                p{
+                    font-size: 31px;
+                    font-weight: 600;
+                    width: 60%;
+                }
+            }
+            .upgrade__section2-right{
+                p{
+                    width: 90%;
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                
+            }
+        }
+    }
+    .small__hr{
+        width: 100px;
+        height: 4px;
+        background-color: $primary-color;
+        border-radius: 20px;
+        margin: 20px 0px;
+    }
+    .upgrade__section2-button,.upgrade__section2-button:visited{
+        padding: 10px 20px;
+        background-color: #D4D0EE;
+        color: $primary-color;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+
+.postalcode{
+    margin: 0px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    justify-content: center;
+    align-items: start;
+    margin: 100px;
+    box-sizing: border-box;
+    .postalcode__left{
+        .payments{
+            display: flex !important;
+            img{
+                width: 40px !important;
+            }
+        }
+        h2{
+            margin: 20px 0px;
+        }
+    ul{
+        li{
+            img{
+                width: 14px;
+                margin-right: 5px;
+            }
+        }
+    }
+    }
+.postalcode__right{
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .postalcode__right-top{
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+    }
+   .postalcode__right-body{
+       display: flex;
+       flex-direction: column;
+       width: 100% !important;
+    
+       align-items: stretch;
+       .pstalcode__input{
+           font-family: $font;
+           color: rgb(202, 202, 202);
+        width: 100%;
+        height: 40px;
+        outline: unset;
+        border: 1px solid #e4e4e4;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        padding: auto 0px;
+        margin-top: 10px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        
+       }
+       h2{
+           margin: 20px 0px;
+           font-size: 20px !important;
+       }
+       .postalecode__action{
+           width: 100%;
+           display: flex;
+           justify-content: flex-end;
+           flex-direction: column;
+       }
+   }
+}
+
+}
+
+
+.postalcode__btn{
+    box-sizing: border-box;
+    padding: 10px 20px ;
+    background-color: $primary-color;
+    border-radius: 5px ;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+    
+}
+
+.postalcode__btn-outlined{
+    box-sizing: border-box;
+    padding: 10px 20px ;
+    background-color: white;
+    border: 1px solid $primary-color;
+    border-radius: 5px ;
+    color: $primary-color;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;  
+}
