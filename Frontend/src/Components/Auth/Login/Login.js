@@ -54,17 +54,8 @@ const Login =(props)=>{
                     <span>Login</span>
                     <p className=" text-grey mg-top-10 font-small">Login to access our advanced photo editor and to start creating professional designs for your social media campaigns.</p>
                 </div>
-                {/* Google Login  */}
-                <div className="login__socialAuth mg-top-20">
-                    <button onClick={()=>{handleGoogleLogin()}} href="" className="btn-outlined btn-circled flex-center" >
-                        <img src={GoogleIcon} alt="Icon" />
-                        <span className="mg-left-10">Login with Google</span>
-                    </button>
-                </div>
                 {/* Login Divider */}
                 <div className=" mg-top-20 login__divider  flex-col-center">
-                    <div className="login__divider-text text-grey pd-10 ">Or sign in with email</div>
-                    <div className=" mg-top-20 hr"></div>
                     {errorLoginShowed == true && 
                       <div className="auth__error">
                       <span className="auth__error-title">Couldnt Login</span>
@@ -89,7 +80,7 @@ const Login =(props)=>{
                 </div>
                     {/*Copy right ? */}
                     <div className="flex login__rights mg-top-20">
-                     <span className="font-small">©2020 All Rights reserved.</span>
+                     <span className="font-small">©2023 All Rights reserved.</span>
                 </div>
         </>
     )
